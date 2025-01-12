@@ -23,7 +23,7 @@
 
 /datum/getrev/proc/get_log_message()
 	var/list/msg = list()
-	msg += "Running Daedalus Dock revision: [date]"
+	msg += "Running Ariadne-42 revision: [date]"
 	if(originmastercommit)
 		msg += "origin/master: [originmastercommit]"
 
