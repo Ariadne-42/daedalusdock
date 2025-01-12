@@ -294,7 +294,7 @@
 	default = "https://daedalus13.net/"
 
 /datum/config_entry/string/githuburl
-	default = "https://github.com/Ariadne-42/Gameserver"
+	default = "https://github.com/Ariadne-42/daedalusdock"
 
 /datum/config_entry/string/discordbotcommandprefix
 	default = "?"
