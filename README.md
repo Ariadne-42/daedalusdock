@@ -18,7 +18,7 @@ Space Station 13 is a round-based roleplaying game set on a cassette-futuristic 
 
 [Running on the server](.github/guides/RUNNING_A_SERVER.md)
 
-[Maps and Away Missions](.github/guides/MAPS_AND_AWAY_MISSIONS.md)
+[Maps and Away Missions](https://github.com/TGStation/tgstation/blob/master/.github/guides/MAPS_AND_AWAY_MISSIONS.md)
 
 ## :exclamation: How to compile :exclamation:
 
