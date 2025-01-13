@@ -373,16 +373,15 @@
 /datum/new_player_panel/proc/view_primer()
 	var/content = {"
 		<div style='width:100%; text-align:center; font-size: 16px'>
-			Welcome, space-farer, to the Great Pool. A large sea of a substance known as Aether, speckled with stars, planets, and other stellar bodies.
+			Welcome to Kepler 275. The ghostly pale blue light of this home star of ours is best viewed from behind sunglasses or tinted windows.
 		</div>
 		<br><br>
 		<div style='width:100%; text-align:center'>
-			You are an inhabitant of a residential space station tucked in a little-explored region of the Pool. Perhaps you were born here, or are a Hermes merchanter lying low after a smuggling bust. Some weeks ago, a group from the Federation Galaxias arrived and announced the station was commandeered for emergency
-			resource production amidst the Resonance Crisis. They brought with them a small group of enforcers from the Mars People's Coalition to ensure a 'smooth transition'.
+			The stations in this system were designed specifically to serve well as your high-density urban residence during off-duty hours, provided by NanoTrasen to you in keeping with corporate tradition. You will arrive at your own shortly.
 		</div>
 		<br><br>
 		<div style='width:100%; text-align:center'>
-		Earn the respect of your superiors. Scam your fellow citizens out of their precious coin. Wash your sorrows down your throat with a chaser of brandy. No matter which you choose, make the most of your time on Olympus Outpost.
+		Whether you'd like to try your hand in our state-of-the-art arcade, decompress in our freshly oxygenated perfluorocarbon pool, wander in our hydroponics gardens, zoom out of our space pod hangers, or cozy up in our privacy-oriented cantinas, we hope you will enjoy your time living at Ariadne-42.
 		</div>
 	"}
 	var/datum/browser/popup = new(parent, "primer", "<center><div>New Player Primer</div></center>", 660, 350)
