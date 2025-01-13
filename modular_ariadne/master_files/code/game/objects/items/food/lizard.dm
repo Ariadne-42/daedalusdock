@@ -32,7 +32,7 @@
 	name = "loaded pomzs-vransj"
 	desc = "One of many Human foods to make its way to the Unathi was french fries, called pomzs-vransj in Sinta'Unathi. When topped with barbecued meat and sauce, they make a hearty meal."
 
-/obj/item/food/kebab/picoss_skewers"
+/obj/item/food/kebab/picoss_skewers
 	desc = "A popular streetfood from the Unathi colonies consisting of vinegar-marinated armorfish on a skewer with onion and chillis."
 
 /obj/item/food/lizard_surf_n_turf
