@@ -16,19 +16,19 @@ $include pariah/pariah_config.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'tgstation' with the name of your choice.
-SERVERNAME Daedalus Dock
+SERVERNAME Ariadne-42
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
 SERVERSQLNAME daedalusdock
 
 ## Station name: The name of the station as it is referred to in-game. If commented out, the game will generate a random name instead.
-STATIONNAME Daedalus Outpost
+STATIONNAME Ariadne-42
 
 ## Community slug for AffectedArc's Web Map
 #WEBMAP_COMMUNITY DaedalusDock
 
 ## Hub subtitle: A line of text inserted under the server name. Should be no greater than 40 characters.
-HUB_SUBTITLE Now with custom lighting!
+#HUB_SUBTITLE Now with custom lighting!
 
 ## Put on byond hub: Uncomment this to put your server on the byond hub.
 #HUB
@@ -48,17 +48,17 @@ EOR_CREDITS_DELAY 40
 ADMIN_LEGACY_SYSTEM
 
 ##Uncomment this to stop any admins loaded by the legacy system from having their rank edited by the permissions panel
-#PROTECT_LEGACY_ADMINS
+PROTECT_LEGACY_ADMINS
 
 ##Uncomment this to stop any ranks loaded by the legacy system from having their flags edited by the permissions panel
-#PROTECT_LEGACY_RANKS
+PROTECT_LEGACY_RANKS
 
 ##Uncomment this to have admin ranks only loaded from the legacy admin_ranks.txt
 ##If enabled, each time admins are loaded ranks the database will be updated with the current ranks and their flags
-#LOAD_LEGACY_RANKS_ONLY
+LOAD_LEGACY_RANKS_ONLY
 
 ## Comment this out to stop locally connected clients from being given the almost full access !localhost! admin rank
-ENABLE_LOCALHOST_RANK
+#ENABLE_LOCALHOST_RANK
 
 ## Uncomment this entry to have certain jobs require your account to be at least a certain number of days old to select. You can configure the exact age requirement for different jobs by editing
 ## the minimal_player_age variable in the files in folder /code/game/jobs/job/.. for the job you want to edit. Set minimal_player_age to 0 to disable age requirement for that job.
@@ -165,19 +165,19 @@ LOG_PICTURES
 # LOG_MECHA
 
 ## log virus and actions
-LOG_VIRUS
+#LOG_VIRUS
 
 ## log cloning actions
-LOG_CLONING
+#LOG_CLONING
 
 ## log shuttle actions
-LOG_SHUTTLE
+#LOG_SHUTTLE
 
 ## log tool interactions [/atom/proc/tool_act]
-LOG_TOOLS
+#LOG_TOOLS
 
 ##log graffiti from engraving
-LOG_GRAFFITI
+#LOG_GRAFFITI
 
 ## Log all timers on timer auto reset
 # LOG_TIMERS_ON_BUCKET_RESET
@@ -186,10 +186,10 @@ LOG_GRAFFITI
 PICTURE_LOGGING_CAMERA
 
 ## period of time in seconds for players to be considered inactive
-# INACTIVITY_PERIOD 300
+INACTIVITY_PERIOD 300
 
 ## period of time in seconds for players to be considered afk and kickable
-# AFK_PERIOD 600
+AFK_PERIOD 1800
 
 ## disconnect players who are considered afk
 # KICK_INACTIVE
@@ -198,7 +198,7 @@ PICTURE_LOGGING_CAMERA
 ALLOW_ADMIN_OOCCOLOR
 
 ## Comment this out to stop admins being able to choose their personal asay color
-ALLOW_ADMIN_ASAYCOLOR
+# ALLOW_ADMIN_ASAYCOLOR
 
 ## Job slot open/close by identification consoles delay in seconds
 ID_CONSOLE_JOBSLOT_DELAY 30
@@ -219,13 +219,13 @@ VOTE_DELAY 6000
 VOTE_PERIOD 600
 
 ## prevents dead players from voting or starting votes
-# NO_DEAD_VOTE
+NO_DEAD_VOTE
 
 ## players' votes default to "No vote" (otherwise,  default to "No change")
 # DEFAULT_NO_VOTE
 
 ## disable abandon mob
-NORESPAWN
+# NORESPAWN
 
 ## Uncomment this to stop people connecting to your server without a registered ckey. (i.e. guest-* are all blocked from connecting)
 GUEST_BAN
@@ -271,7 +271,7 @@ CHECK_RANDOMIZER
 # RULESURL https://daedalus13.net/
 
 ## Github address
-GITHUBURL https://github.com/DaedalusDock/Gameserver
+https://github.com/Ariadne-42/daedalusdock
 
 ## Discord bot command prefix, if the discord bot is used
 # DISCORDBOTCOMMANDPREFIX ?
@@ -458,9 +458,9 @@ CLIENT_ERROR_BUILD 1421
 ## Admins are exempt from these limits.
 ## Hitting the minute limit notifies admins.
 ## Set to 0 or comment out to disable.
-SECOND_TOPIC_LIMIT 10
+# SECOND_TOPIC_LIMIT 10
 
-MINUTE_TOPIC_LIMIT 100
+# MINUTE_TOPIC_LIMIT 100
 
 ### Fail2Topic settings
 ### fail2topic is a system for automating IP bans for abusers of the world/Topic API.
@@ -482,9 +482,9 @@ TOPIC_MAX_SIZE 500
 ## Admins are exempt from these limits.
 ## Hitting the minute limit notifies admins.
 ## Set to 0 to disable.
-SECOND_CLICK_LIMIT 15
+# SECOND_CLICK_LIMIT 15
 
-MINUTE_CLICK_LIMIT 400
+# MINUTE_CLICK_LIMIT 400
 
 ##Error handling related options
 ## The "cooldown" time for each occurence of a unique error
@@ -558,6 +558,7 @@ AUTO_PROFILE
 ## Uncomment to enable global ban DB using the provided URL. The API should expect to receive a ckey at the end of the URL.
 ## More API details can be found here: https://centcom.melonmesa.com
 CENTCOM_BAN_DB https://centcom.melonmesa.com/ban/search
+
 ## Uncomment to enable source whitelisting, a comma-separated list (no spaces) of CentCom sources (sourceName).
 ## If enabled, only bans from these servers will be shown to admins using CentCom. The default sources list is an example.
 #CENTCOM_SOURCE_WHITELIST Beestation MRP,TGMC,FTL13
@@ -619,7 +620,7 @@ CACHE_ASSETS 0
 ## Uncomment to allow the station name to be in the hub entry.
 ## You should only enable this if you can guarantee a station name doesn't break BYOND's TOS.
 ## BYOND staff have gotten upset at us in the past for inappropriate station names.
-STATION_NAME_IN_HUB_ENTRY
+# STATION_NAME_IN_HUB_ENTRY
 
 ## The number of PR announcements allowed for the same pull request per round
 ## This makes sure that somebody can only spam a few reopens and closes before being ignored
